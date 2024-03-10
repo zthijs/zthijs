@@ -7,7 +7,7 @@
 
 ### Languages
 
-[![My Skills](https://skillicons.dev/icons?i=js,ts,html,css,py,java)](https://zthijs.nl/skills)
+[![My Skills](https://skillicons.dev/icons?i=js,ts,html,css,py,java,kotlin)](https://zthijs.nl/skills)
 
 ### Frameworks
 [![My Skills](https://skillicons.dev/icons?i=nextjs,react,angular,spring,vite,bootstrap,tailwind,express,hibernate,jest,cypres)](https://zthijs.nl/skills)
