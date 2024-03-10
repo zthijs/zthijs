@@ -2,7 +2,7 @@
 <h3>Third-year software engineering student.</h3>
 
 - 🔭 I’m currently working on [Nenspection](https://zthijs.nl/work/nenspection)
-- 👨‍💻 All of my projects are available at [zthijs.nl](zthijs.nl/work)
+- 👨‍💻 All of my projects are available at [zthijs.nl](https://zthijs.nl/work)
 
 
 ### Languages
