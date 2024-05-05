@@ -1,7 +1,7 @@
 <h1>Hi 👋, I'm Thijs</h1>
 <h3>Third-year software engineering student.</h3>
 
-- 🔭 I’m currently working on [Nenspection](https://zthijs.nl/work/nenspection)
+- 🔭 I’m currently working on secret AlbertHeijn things.
 - 👨‍💻 All of my projects are available at [zthijs.nl](https://zthijs.nl/work)
 
 
