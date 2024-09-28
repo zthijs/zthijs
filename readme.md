@@ -1,10 +1,6 @@
 <h1>Hi 👋, I'm Thijs</h1>
 <h3>Third-year software engineering student.</h3>
 
-- 🔭 I’m currently working on secret AlbertHeijn things.
-- 👨‍💻 All of my projects are available at [zthijs.nl](https://zthijs.nl/work)
-
-
 ### Languages
 
 [![My Skills](https://skillicons.dev/icons?i=js,ts,html,css,py,java,kotlin)](https://zthijs.nl/skills)
