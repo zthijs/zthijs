@@ -1,5 +1,5 @@
 <h1>Hi 👋, I'm Thijs</h1>
-<h3>Third-year software engineering student.</h3>
+<h3>Fourth-year software engineering student.</h3>
 
 ### Languages
 
