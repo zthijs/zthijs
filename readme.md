@@ -16,5 +16,3 @@
 
 ### Other
 [![My Skills](https://skillicons.dev/icons?i=azure,netlify,docker,nginx,nodejs,wordpress,kubernetes)](https://zthijs.nl/skills)
-
-<p><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=zthijs&show_icons=true&locale=en&layout=compact" alt="zthijs" /></p>
