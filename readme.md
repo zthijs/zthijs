@@ -16,7 +16,3 @@
 ### Other
 [![My Skills](https://skillicons.dev/icons?i=azure,netlify,docker,nginx,nodejs,wordpress,kubernetes)](https://zthijs.nl/skills)
 
----
-
-### 🎶 Now Listening
-![Now Playing](https://delightful-meadow-0ac784003.1.azurestaticapps.net/playing/thijsz1)
