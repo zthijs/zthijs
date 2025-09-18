@@ -10,7 +10,7 @@ export const Footer: FC = () => {
   return (
     <footer>
       <Wrapper variant="standard">
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-3 border-b pt-8 pb-24 border-base-200 dark:border-base-800">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-3 xl:grid-cols-4 border-b pt-8 pb-24 border-base-200 dark:border-base-800">
           <Text
             tag="h3"
             variant="textSM"
@@ -24,7 +24,7 @@ export const Footer: FC = () => {
           <Text
             tag="p"
             variant="textXS"
-            className="text-base-600 dark:text-base-400 lg:col-span-2"
+            className="text-base-600 dark:text-base-400 md:col-span-2 xl:col-span-3"
           >
             © <span>{year}</span> zthijs. All rights reserved.
           </Text>

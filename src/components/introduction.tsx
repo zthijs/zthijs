@@ -5,7 +5,7 @@ import Wrapper from "@/components/ui/wrapper";
 export const Introduction = () => (
   <section>
     <Wrapper variant="standard">
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-3 border-b pb-8 pt-24 border-base-200 dark:border-base-800">
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-3 xl:grid-cols-4 border-b pb-8 pt-24 border-base-200 dark:border-base-800">
         <Image
           src={"/avatar.jpeg"}
           alt="Thijs"
@@ -15,7 +15,7 @@ export const Introduction = () => (
           decoding="async"
           className="rounded-2xl size-24 object-cover object-center"
         />
-        <div className="lg:col-span-2">
+        <div className="md:col-span-2 xl:col-span-3">
           <Text
             tag="h1"
             variant="textSM"

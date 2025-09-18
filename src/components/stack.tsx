@@ -7,8 +7,8 @@ import { stack } from "@/constants/stack";
 export const Stack = () => (
   <section>
     <Wrapper variant="standard">
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-3 border-b py-8 border-base-200 dark:border-base-800">
-        <div className="lg:sticky lg:top-24 lg:z-40 self-start">
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-3 xl:grid-cols-4 border-b py-8 border-base-200 dark:border-base-800">
+        <div className="xl:sticky xl:top-24 xl:z-40 self-start">
           <Text
             tag="h2"
             variant="textSM"
@@ -17,14 +17,14 @@ export const Stack = () => (
             My Stack
           </Text>
         </div>
-        <div className="lg:col-span-2 grid grid-cols-2 gap-8">
+        <div className="md:col-span-2 xl:col-span-3 grid grid-cols-2 md:grid-cols-3 gap-8">
           {stack.map((item) => (
             <article
               key={item.title}
-              className="group relative grid grid-cols-1 gap-4 lg:grid-cols-3 lg:items-start "
+              className="group relative grid grid-cols-1 gap-4 xl:grid-cols-3 xl:items-start "
             >
               <div className="absolute -inset-y-4 z-0 scale-95 bg-base-50 dark:bg-base-800/20 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 -inset-x-4 rounded-2xl duration-300 " />
-              <div className="lg:col-span-2">
+              <div className="xl:col-span-2">
                 <div className="flex items-center gap-4 relative">
                   <Image
                     src={item.image}
