@@ -50,8 +50,8 @@ export default function RootLayout({
           <main className="grow">{children}</main>
           <Footer />
         </ThemeProvider>
-        <Analytics />
       </body>
+      <Analytics />
     </html>
   );
 }
