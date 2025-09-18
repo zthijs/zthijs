@@ -33,7 +33,7 @@ export const Gallery = () => {
                           "aspect-[4/3]": photo.orientation === "landscape",
                         })}
                         src={photo.urls.thumb}
-                        alt={photo.alt_description!}
+                        alt={photo.alt_description || "Unsplash photo by Thijs"}
                       />
                     </div>
                   </PhotoView>
