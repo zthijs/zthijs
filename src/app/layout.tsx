@@ -4,6 +4,7 @@ import { Footer } from "@/components/ui/footer";
 
 import "react-photo-view/dist/react-photo-view.css";
 import "@/assets/styles/globals.css";
+import { Analytics } from "@/components/analytics";
 
 export const metadata: Metadata = {
   title: "Thijs",
@@ -40,10 +41,16 @@ export default function RootLayout({
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
       </head>
       <body className="selection:bg-base-200 selection:text-base-900 antialiased">
-        <ThemeProvider attribute={"class"} defaultTheme="system" enableSystem>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          storageKey="theme"
+          enableSystem
+        >
           <main className="grow">{children}</main>
           <Footer />
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );

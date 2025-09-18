@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { PhotoProvider, PhotoView } from "react-photo-view";
 import Text from "@/components/ui/text";
 import Wrapper from "@/components/ui/wrapper";
@@ -27,11 +28,13 @@ export const Gallery = () => {
                 {photos.map((photo) => (
                   <PhotoView key={photo.id} src={photo.urls.full}>
                     <div className="break-inside-avoid mb-6 cursor-pointer">
-                      <img
+                      <Image
                         className={cn("w-full rounded-lg object-cover", {
                           "aspect-[3/4]": photo.orientation === "portrait",
                           "aspect-[4/3]": photo.orientation === "landscape",
                         })}
+                        loading="eager"
+                        decoding="async"
                         src={photo.urls.thumb}
                         alt={photo.alt_description || "Unsplash photo by Thijs"}
                       />
