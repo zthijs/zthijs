@@ -24,15 +24,17 @@ export const Gallery = () => {
           </div>
           <div className="flex flex-col gap-12 md:col-span-2 xl:col-span-3">
             <PhotoProvider>
-              <div className="columns-2 md:columns-3 gap-6 ">
+              <div className="columns-2 md:columns-3 gap-4 md:gap-6 ">
                 {photos.map((photo) => (
                   <PhotoView key={photo.id} src={photo.urls.full}>
-                    <div className="break-inside-avoid mb-6 cursor-pointer">
+                    <div className="break-inside-avoid mb-4 md:mb-6 cursor-pointer">
                       <Image
                         className={cn("w-full rounded-lg object-cover", {
                           "aspect-[3/4]": photo.orientation === "portrait",
                           "aspect-[4/3]": photo.orientation === "landscape",
                         })}
+                        width={photo.width}
+                        height={photo.height}
                         loading="eager"
                         decoding="async"
                         src={photo.urls.thumb}
