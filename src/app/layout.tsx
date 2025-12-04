@@ -1,4 +1,4 @@
-import { Analytics } from "@vercel/analytics/next";
+import { Analytics } from "@/components/analytics";
 import type { Metadata } from "next";
 import { ThemeProvider } from "next-themes";
 import { Footer } from "@/components/ui/footer";
