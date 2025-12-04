@@ -1,6 +1,6 @@
-import { Analytics } from "@/components/analytics";
 import type { Metadata } from "next";
 import { ThemeProvider } from "next-themes";
+import { Analytics } from "@/components/analytics";
 import { Footer } from "@/components/ui/footer";
 
 import "react-photo-view/dist/react-photo-view.css";
