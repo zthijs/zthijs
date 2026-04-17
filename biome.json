@@ -1,185 +1,185 @@
 {
-    "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
-    "vcs": {
-        "enabled": true,
-        "clientKind": "git",
-        "useIgnoreFile": true
+  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "useIgnoreFile": true
+  },
+  "files": {
+    "ignoreUnknown": true,
+    "includes": [
+      "**",
+      "!node_modules",
+      "!.next",
+      "!dist",
+      "!build"
+    ]
+  },
+  "formatter": {
+    "enabled": true,
+    "attributePosition": "auto",
+    "bracketSpacing": true,
+    "expand": "auto",
+    "formatWithErrors": false,
+    "useEditorconfig": true,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineWidth": 100,
+    "lineEnding": "lf"
+  },
+  "linter": {
+    "enabled": true,
+    "domains": {
+      "project": "recommended"
     },
-    "files": {
-        "ignoreUnknown": true,
-        "includes": [
-            "**",
-            "!node_modules",
-            "!.next",
-            "!dist",
-            "!build"
-        ]
-    },
-    "formatter": {
-        "enabled": true,
-        "attributePosition": "auto",
-        "bracketSpacing": true,
-        "expand": "auto",
-        "formatWithErrors": false,
-        "useEditorconfig": true,
-        "indentStyle": "space",
-        "indentWidth": 4,
-        "lineWidth": 100,
-        "lineEnding": "lf"
+    "rules": {
+      "complexity": {
+        "noForEach": "off",
+        "useOptionalChain": "off",
+        "noUselessSwitchCase": "off",
+        "noCommaOperator": "error",
+        "useNumericLiterals": "error",
+        "noArguments": "error"
+      },
+      "performance": {
+        "noAccumulatingSpread": "off"
+      },
+      "style": {
+        "useEnumInitializers": "off",
+        "useDefaultSwitchClause": "error",
+        "useFilenamingConvention": {
+          "level": "warn",
+          "options": {
+            "requireAscii": true,
+            "strictCase": false,
+            "filenameCases": [
+              "kebab-case"
+            ]
+          }
+        },
+        "useLiteralEnumMembers": "error",
+        "useNodejsImportProtocol": "error",
+        "useAsConstAssertion": "error",
+        "useSelfClosingElements": "error",
+        "useConst": "error",
+        "useSingleVarDeclarator": "error",
+        "noUnusedTemplateLiteral": "error",
+        "useNumberNamespace": "error",
+        "noInferrableTypes": "error",
+        "useExponentiationOperator": "error",
+        "useTemplate": "error",
+        "noParameterAssign": "off",
+        "noNonNullAssertion": "error",
+        "useDefaultParameterLast": "error",
+        "useImportType": "error",
+        "useExportType": "error",
+        "noUselessElse": "error",
+        "useShorthandFunctionType": "error"
+      },
+      "correctness": {
+        "noUnusedImports": "warn",
+        "noUnusedVariables": {
+          "level": "warn",
+          "options": {
+            "ignoreRestSiblings": true
+          }
+        }
+      }
+    }
+  },
+  "assist": {
+    "enabled": true,
+    "actions": {
+      "source": {
+        "organizeImports": {
+          "level": "on",
+          "options": {
+            "groups": [
+              [
+                ":NODE:",
+                ":BUN:"
+              ],
+              "react",
+              [
+                ":URL:",
+                ":PATH:",
+                ":PACKAGE_WITH_PROTOCOL:",
+                ":PACKAGE:",
+                ":ALIAS:",
+                "!**/*.css",
+                "!**/*.scss",
+                "!**/*.svg"
+              ],
+              ":BLANK_LINE:",
+              [
+                "**/*.css",
+                "**/*.scss"
+              ],
+              ":BLANK_LINE:",
+              "**/*.svg"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "javascript": {
+    "assist": {
+      "enabled": true
     },
     "linter": {
-        "enabled": true,
-        "domains": {
-            "project": "recommended"
-        },
-        "rules": {
-            "complexity": {
-                "noForEach": "off",
-                "useOptionalChain": "off",
-                "noUselessSwitchCase": "off",
-                "noCommaOperator": "error",
-                "useNumericLiterals": "error",
-                "noArguments": "error"
-            },
-            "performance": {
-                "noAccumulatingSpread": "off"
-            },
-            "style": {
-                "useEnumInitializers": "off",
-                "useDefaultSwitchClause": "error",
-                "useFilenamingConvention": {
-                    "level": "warn",
-                    "options": {
-                        "requireAscii": true,
-                        "strictCase": false,
-                        "filenameCases": [
-                            "kebab-case"
-                        ]
-                    }
-                },
-                "useLiteralEnumMembers": "error",
-                "useNodejsImportProtocol": "error",
-                "useAsConstAssertion": "error",
-                "useSelfClosingElements": "error",
-                "useConst": "error",
-                "useSingleVarDeclarator": "error",
-                "noUnusedTemplateLiteral": "error",
-                "useNumberNamespace": "error",
-                "noInferrableTypes": "error",
-                "useExponentiationOperator": "error",
-                "useTemplate": "error",
-                "noParameterAssign": "off",
-                "noNonNullAssertion": "error",
-                "useDefaultParameterLast": "error",
-                "useImportType": "error",
-                "useExportType": "error",
-                "noUselessElse": "error",
-                "useShorthandFunctionType": "error"
-            },
-            "correctness": {
-                "noUnusedImports": "warn",
-                "noUnusedVariables": {
-                    "level": "warn",
-                    "options": {
-                        "ignoreRestSiblings": true
-                    }
-                }
-            }
-        }
+      "enabled": true
     },
-    "assist": {
-        "enabled": true,
-        "actions": {
-            "source": {
-                "organizeImports": {
-                    "level": "on",
-                    "options": {
-                        "groups": [
-                            [
-                                ":NODE:",
-                                ":BUN:"
-                            ],
-                            "react",
-                            [
-                                ":URL:",
-                                ":PATH:",
-                                ":PACKAGE_WITH_PROTOCOL:",
-                                ":PACKAGE:",
-                                ":ALIAS:",
-                                "!**/*.css",
-                                "!**/*.scss",
-                                "!**/*.svg"
-                            ],
-                            ":BLANK_LINE:",
-                            [
-                                "**/*.css",
-                                "**/*.scss"
-                            ],
-                            ":BLANK_LINE:",
-                            "**/*.svg"
-                        ]
-                    }
-                }
-            }
-        }
+    "jsxRuntime": "transparent",
+    "parser": {
+      "unsafeParameterDecoratorsEnabled": true,
+      "jsxEverywhere": false,
+      "gritMetavariables": true
     },
-    "javascript": {
-        "assist": {
-            "enabled": true
-        },
-        "linter": {
-            "enabled": true
-        },
-        "jsxRuntime": "transparent",
-        "parser": {
-            "unsafeParameterDecoratorsEnabled": true,
-            "jsxEverywhere": false,
-            "gritMetavariables": true
-        },
-        "formatter": {
-            "enabled": true,
-            "quoteStyle": "single",
-            "jsxQuoteStyle": "double",
-            "quoteProperties": "asNeeded",
-            "semicolons": "always",
-            "indentStyle": "space",
-            "indentWidth": 4,
-            "lineWidth": 100,
-            "lineEnding": "lf",
-            "bracketSameLine": false,
-            "attributePosition": "auto",
-            "bracketSpacing": true,
-            "expand": "auto",
-            "operatorLinebreak": "after",
-            "trailingCommas": "all",
-            "arrowParentheses": "asNeeded"
-        }
-    },
-    "json": {
-        "assist": {
-            "enabled": true
-        },
-        "linter": {
-            "enabled": true
-        },
-        "formatter": {
-            "enabled": true,
-            "indentStyle": "space",
-            "bracketSpacing": true,
-            "expand": "always",
-            "lineEnding": "lf",
-            "trailingCommas": "none",
-            "indentWidth": 4,
-            "lineWidth": 100
-        },
-        "parser": {
-            "allowComments": true,
-            "allowTrailingCommas": true
-        }
-    },
-    "css": {
-        "parser": {
-            "tailwindDirectives": true
-        }
+    "formatter": {
+      "enabled": true,
+      "quoteStyle": "single",
+      "jsxQuoteStyle": "double",
+      "quoteProperties": "asNeeded",
+      "semicolons": "always",
+      "indentStyle": "space",
+      "indentWidth": 2,
+      "lineWidth": 100,
+      "lineEnding": "lf",
+      "bracketSameLine": false,
+      "attributePosition": "auto",
+      "bracketSpacing": true,
+      "expand": "auto",
+      "operatorLinebreak": "after",
+      "trailingCommas": "all",
+      "arrowParentheses": "asNeeded"
     }
+  },
+  "json": {
+    "assist": {
+      "enabled": true
+    },
+    "linter": {
+      "enabled": true
+    },
+    "formatter": {
+      "enabled": true,
+      "indentStyle": "space",
+      "bracketSpacing": true,
+      "expand": "always",
+      "lineEnding": "lf",
+      "trailingCommas": "none",
+      "indentWidth": 2,
+      "lineWidth": 100
+    },
+    "parser": {
+      "allowComments": true,
+      "allowTrailingCommas": true
+    }
+  },
+  "css": {
+    "parser": {
+      "tailwindDirectives": true
+    }
+  }
 }

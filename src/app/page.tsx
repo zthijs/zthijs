@@ -4,12 +4,12 @@ import { Socials } from '@/components/socials';
 import { Stack } from '@/components/stack';
 
 export default function Home() {
-    return (
-        <>
-            <Introduction />
-            <Stack />
-            <Gallery />
-            <Socials />
-        </>
-    );
+  return (
+    <>
+      <Introduction />
+      <Stack />
+      <Gallery />
+      <Socials />
+    </>
+  );
 }
