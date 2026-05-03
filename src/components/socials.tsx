@@ -1,6 +1,12 @@
+import { EmailLink } from '@/components/email-link';
 import Text from '@/components/ui/text';
 import Wrapper from '@/components/ui/wrapper';
-import { socials } from '@/constants/site';
+
+const items: { key: string; label: React.ReactNode; href?: string }[] = [
+  { key: 'github', label: 'GitHub', href: 'https://github.com/zthijs' },
+  { key: 'linkedin', label: 'LinkedIn', href: 'https://www.linkedin.com/in/zthijs' },
+  { key: 'email', label: <EmailLink /> },
+];
 
 export const Socials = () => (
   <section>
@@ -12,18 +18,33 @@ export const Socials = () => (
           </Text>
         </div>
         <div className="flex flex-col gap-2 md:col-span-2 xl:col-span-3">
-          {socials.map(social => (
-            <Text
-              key={social.platform}
-              href={social.url}
-              tag="a"
-              target="_blank"
-              variant="textXS"
-              className="text-base-600 dark:text-base-500 hover:text-base-900 dark:hover:text-white"
-            >
-              {social.platform}
-            </Text>
-          ))}
+          {items.map(item =>
+            item.href ? (
+              <Text
+                key={item.key}
+                href={item.href}
+                tag="a"
+                target="_blank"
+                variant="textXS"
+                className={
+                  'text-base-600 dark:text-base-500 hover:text-base-900 dark:hover:text-white'
+                }
+              >
+                {item.label}
+              </Text>
+            ) : (
+              <Text
+                key={item.key}
+                tag="span"
+                variant="textXS"
+                className={
+                  'text-base-600 dark:text-base-500 hover:text-base-900 dark:hover:text-white'
+                }
+              >
+                {item.label}
+              </Text>
+            ),
+          )}
         </div>
       </div>
     </Wrapper>
