@@ -1,10 +1,17 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { ThemeProvider } from 'next-themes';
 import { Analytics } from '@/components/analytics';
 import { Footer } from '@/components/ui/footer';
 
 import 'react-photo-view/dist/react-photo-view.css';
 import '@/assets/styles/globals.css';
+
+export const viewport: Viewport = {
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#fafafa' },
+    { media: '(prefers-color-scheme: dark)', color: '#262626' },
+  ],
+}
 
 export const metadata: Metadata = {
   title: 'Thijs',
