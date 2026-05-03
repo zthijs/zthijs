@@ -128,7 +128,7 @@ const Button: React.FC<ButtonLikeProps> = ({
   ].join(' ');
 
   const content = iconOnly ? (
-    <>{icon}</>
+    icon
   ) : (
     <>
       {leftIcon}

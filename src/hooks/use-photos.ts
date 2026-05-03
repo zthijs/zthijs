@@ -52,8 +52,8 @@ export const usePhotos = () => {
         );
 
         setPhotos(processedPhotos);
-      } catch (err: any) {
-        setError(err.message || 'Unknown error');
+      } catch (err: unknown) {
+        setError(err instanceof Error ? err.message : 'Unknown error');
       } finally {
         setLoading(false);
       }

@@ -38,10 +38,8 @@ export const Stack = () => (
                       className=" font-medium tracking-tight text-base-900 dark:text-white  "
                     >
                       <Link href={item.link}>
-                        <>
-                          <span className="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl" />
-                          <span className="relative z-10">{item.title}</span>
-                        </>
+                        <span className="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl" />
+                        <span className="relative z-10">{item.title}</span>
                       </Link>
                     </Text>
                   </div>

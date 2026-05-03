@@ -67,7 +67,7 @@ const Text = <T extends AllowedTag = 'p'>({
 
   if (tag === 'a' && href) {
     return (
-      <Link href={href} className={classes} {...(rest as any)}>
+      <Link href={href} className={classes} {...(rest as React.ComponentPropsWithoutRef<'a'>)}>
         {leftIcon}
         {children}
         {rightIcon}
@@ -76,7 +76,7 @@ const Text = <T extends AllowedTag = 'p'>({
   }
 
   return (
-    <Tag className={classes} {...(rest as any)}>
+    <Tag className={classes} {...(rest as React.HTMLAttributes<HTMLElement>)}>
       {leftIcon}
       {children}
       {rightIcon}
