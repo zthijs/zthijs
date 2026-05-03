@@ -11,7 +11,7 @@ export const viewport: Viewport = {
     { media: '(prefers-color-scheme: light)', color: '#fafafa' },
     { media: '(prefers-color-scheme: dark)', color: '#262626' },
   ],
-}
+};
 
 export const metadata: Metadata = {
   title: 'Thijs',
