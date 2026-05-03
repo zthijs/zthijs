@@ -35,6 +35,13 @@ jobs:
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
+      
+      - name: Get Pages URL
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          url=$(gh api "repos/$GITHUB_REPOSITORY/pages" --jq '.html_url' | sed 's|https://||')
+          echo "PAGES_URL=$url" >> $GITHUB_ENV
 
       - name: Restore cache
         uses: actions/cache@v4
@@ -52,6 +59,8 @@ jobs:
         env:
           NEXT_PUBLIC_UNSPLASH_CLIENT_ID: ${{ vars.NEXT_PUBLIC_UNSPLASH_CLIENT_ID }}
           NEXT_PUBLIC_UNSPLASH_USERNAME: ${{ vars.NEXT_PUBLIC_UNSPLASH_USERNAME }}
+          NEXT_PUBLIC_VINCE_SCRIPT_URL: ${{ vars.NEXT_PUBLIC_VINCE_SCRIPT_URL }}
+          NEXT_PUBLIC_PAGES_DOMAIN: ${{ env.PAGES_URL }}
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
