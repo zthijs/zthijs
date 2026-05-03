@@ -26,8 +26,8 @@ export const Gallery = () => {
                     <div className="break-inside-avoid mb-4 md:mb-6 cursor-pointer">
                       <Image
                         className={cn('w-full rounded-lg object-cover', {
-                          'aspect-[3/4]': photo.orientation === 'portrait',
-                          'aspect-[4/3]': photo.orientation === 'landscape',
+                          'aspect-3/4': photo.orientation === 'portrait',
+                          'aspect-4/3': photo.orientation === 'landscape',
                         })}
                         width={photo.width}
                         height={photo.height}
