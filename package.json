@@ -2,6 +2,7 @@
   "name": "@zthijs/zthijs",
   "version": "0.0.0",
   "private": true,
+  "packageManager": "pnpm@11.8.0",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
