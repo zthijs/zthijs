@@ -46,13 +46,13 @@ export default function RootLayout({
       <head>
         <link rel="preconnect" href="https://rsms.me/" />
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+        <Analytics />
       </head>
       <body className="selection:bg-base-200 selection:text-base-900 antialiased">
         <ThemeProvider attribute="class" defaultTheme="system" storageKey="theme" enableSystem>
           <main className="grow">{children}</main>
           <Footer />
         </ThemeProvider>
-        <Analytics />
       </body>
     </html>
   );
