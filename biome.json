@@ -133,8 +133,7 @@
     "jsxRuntime": "transparent",
     "parser": {
       "unsafeParameterDecoratorsEnabled": true,
-      "jsxEverywhere": false,
-      "gritMetavariables": true
+      "jsxEverywhere": false
     },
     "formatter": {
       "enabled": true,
